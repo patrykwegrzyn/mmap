@@ -1,0 +1,18 @@
+{
+  "name": "mmap-native",
+  "version": "1.0.0",
+  "description": "Native mmap bindings for Node.js",
+  "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "scripts": {
+    "install": "node-gyp rebuild",
+    "test": "node --test test.js"
+  },
+  "license": "MIT"
+}
